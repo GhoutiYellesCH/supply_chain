@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Adhahi Tracker",
+    "slug": "adhahi-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": { "backgroundColor": "#0f9d58" },
+    "ios": { "supportsTablet": true, "infoPlist": {
+      "NSCameraUsageDescription": "Scan sheep QR codes",
+      "NSLocationWhenInUseUsageDescription": "Capture GPS for events"
+    }},
+    "android": {
+      "package": "com.adhahi.tracker",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Allow camera to scan QR codes." }]
+    ]
+  }
+}
